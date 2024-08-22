@@ -57,6 +57,24 @@
       .gray-bg {
         background: rgb(244, 244, 244);
       }
+      .form-bg{
+        background-image: url(./assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size:cover ;
+      }
+
+
+      /* Chrome, Safari, Edge, Opera for hiding input scroll icon*/
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
     </style>
   </head>
   <body class="manrope-font">
@@ -435,7 +453,7 @@
       </section>
 
       <!-- *news section -->
-       <section class="gray-bg">
+      <section class="gray-bg lg:pb-20 pb-9">
         <div class="w-11/12 mx-auto max-w-screen-2xl">
           <div class="flex flex-col justify-center items-center space-y-10 pt-20">
             <button
@@ -454,6 +472,7 @@
               accents.
             </p>
           </div>
+
           <!-- *cards -->
           <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-8 gap-6 mx-auto">
             <!-- *card1 -->
@@ -500,7 +519,49 @@
             </div>
            </div>
         </div>
-       </section>
+      </section>
+      
+       <!-- *form section -->
+      <section class="form-bg w-full pb-14">
+          <div class="w-11/12 mx-auto max-w-screen-xl">
+            <div class="flex flex-col justify-center items-center space-y-10 pt-20">
+              <button
+                class="rounded-full bg-lime-200 py-4 px-7 hover:bg-slate-500 text-xl font-medium"
+              >
+                <i class="fa-solid fa-arrow-right"></i>  Let’s Connect
+              </button>
+              <h1
+                class="text-5xl lg:text-6xl font-extrabold text-center lg:text-left"
+              >
+              Let’s Discuss Next Project
+              </h1>
+              <p class="text-center text-xl font-medium text-wrap">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+            <div class="mt-7 grid grid-cols-1 lg:grid-cols-2 lg:gap-5 md:grid-cols-2 md:gap-5 gap-2 place-items-center max-w-screen-xl lg:p-10">
+              <div class="h-16 w-full"><input type="text" placeholder="First Name*" class="rounded-full input input-bordered  max-w-screen-2xl w-full shadow-md" /></div>
+              <div class="h-16 w-full"><input type="text" placeholder="Last Name*" class="input input-bordered w-full  max-w-screen-2xl rounded-full shadow-md" /></div>
+              <div class="h-16 w-full"><input type="number" placeholder="Phone Number*" class="input input-bordered w-full  max-w-screen-2xl rounded-full shadow-md" /></div>
+              <div class="h-16 w-full"><input type="email" placeholder="Email Number*" class="input input-bordered w-full max-w-screen-2xl rounded-full shadow-md" /></div>
+              <div class="w-full lg:col-span-2 md:col-span-2"><textarea style="resize: none;" placeholder="Write your message here" class="h-48 shadow-md textarea textarea-bordered textarea-lg w-full max-w-screen-2xl rounded-xl"></textarea></div>
+            </div>
+            <div class="mt-2">
+              <a
+                class="bg-color-green text-xl font-extrabold rounded-full py-3 hover:bg-slate-200 w-11/12 mx-auto flex justify-center items-center gap-2"
+              >
+              Send Mail
+                <span class="bg-black py-2 px-3 rounded-full"
+                  ><i
+                    class="fa-solid fa-arrow-up-long text-xl rotate-45 text-white"
+                  ></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </section>
     </main>
     <footer></footer>
   </body>
