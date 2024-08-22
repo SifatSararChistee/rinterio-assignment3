@@ -50,15 +50,16 @@
       .banner-bg {
         background: rgb(244, 244, 244);
         background: linear-gradient(
-          93deg,
-          rgba(244, 244, 244, 1) 2%,
-          rgba(245, 245, 245, 1) 96%
-        );
+          rgba(244, 244, 244, 1),
+          rgba(245, 245, 244, .1));
+      }
+      .gray-bg {
+        background: rgb(244,244,244);
       }
     </style>
   </head>
   <body class="manrope-font">
-    <header class="banner-bg">
+    <header class="banner-bg lg:pb-20 pb-7">
       <!-- *navigation bar -->
       <nav class="pt-6">
         <div class="navbar container mx-auto justify-between">
@@ -85,10 +86,10 @@
           <div class="navbar-end hidden lg:flex md:flex gap-4">
             <div class="space-x-2 flex">
               <i
-                class="fa-solid fa-magnifying-glass bg-white text-xl py-2 px-3 rounded-full shadow-md"
+                class="fa-solid fa-magnifying-glass bg-white text-xl py-2 px-3 rounded-full shadow-md hover:bg-lime-300"
               ></i>
               <i
-                class="fa-solid fa-cart-shopping bg-white text-xl py-2 px-3 rounded-full shadow-md"
+                class="fa-solid fa-cart-shopping bg-white text-xl py-2 px-3 rounded-full shadow-md hover:bg-lime-300"
               ></i>
             </div>
             <div class="flex">
@@ -173,7 +174,65 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <!-- *main section -->
+    <main>
+      <!-- *design section -->
+      <section class="gray-bg">
+        <!-- *vector image -->
+        <div class="container mx-auto hidden lg:block mb-4 pt-6">
+          <img class="h-16 w-40" src="assets/Vector.png" alt="" />
+        </div>
+        <!-- *design content container -->
+        <div class="flex container flex-col mx-auto justify-between lg:flex-row p-4 lg:p-0">
+          <!-- * left content-->
+          <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start space-y-10  lg:w-2/4">
+            <button class="rounded-full bg-[#FFFFFF] py-4 px-7 hover:bg-slate-500 text-xl font-medium">
+              <i class="fa-solid fa-arrow-right"></i> About Us
+            </button>
+            <h1 class="text-5xl lg:text-6xl font-extrabold text-center lg:text-left">We design thoughtful, <br> liveable spaces</h1>
+            <p class="text-center text-xl font-medium lg:text-left">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+
+            <!-- *cards -->
+            <div class="flex flex-col gap-10 w-11/12">
+              
+              <!-- *card 1 -->
+            <div class="flex bg-[#FFFFFF] rounded-2xl p-8 shadow-xl gap-4 justify-center items-center">
+              <div><img src="assets/commercial.png" alt="" /></div>
+              <div>
+                <h4 class="text-2xl font-extrabold mb-4">Commercial</h4>
+                <p class="text-lg font-medium"> 
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+              </div>
+            <!-- *card 2 -->
+            <div class="flex bg-[#FFFFFF] rounded-2xl p-8 shadow-xl gap-4 justify-center items-center">
+              <div><img src="assets/residential.png" alt="" /></div>
+              <div>
+                <h4 class="text-2xl font-extrabold mb-4">Residential</h4>
+                <p class="text-lg font-medium">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+                      <!-- * right content-->
+          <div class="lg:w-2/4 mt-8 lg:mt-0 w-11/12 mx-auto">
+            <img class="w-full" src="assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+          </div>
+
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
